@@ -30,18 +30,6 @@ void update() {
 
 	util::text << "Hello!";
 	util::drawText(36, vec2(0.f));
-
-	std::vector<int> keys = input::getPressedKeys();
-	if (keys.size() > 0) {
-		for (auto& k : keys) util::text << "key " << (std::wstring() + (wchar_t)k) << " pressed!\n";
-		util::drawText(24, input::getMousePos());
-	}
-
-	//unsigned int k = input::pollTextKey();
-	//if (k > 0) {
-	//	util::text << "key " << (std::wstring() + (wchar_t)k) << " pressed!\n";
-	//	util::drawText(24, input::getMousePos());
-	//}
 }
 
 int main(){
