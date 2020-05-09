@@ -8,8 +8,6 @@
 
 #include <parrlib/parrlib.h>
 
-TextRenderer txr;
-
 void init() {
 	prc::setClearColor("#ffffffff");
 }
